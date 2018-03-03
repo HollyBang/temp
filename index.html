@@ -6,126 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <!-- <link rel="stylesheet" href="./css/bootstrap-theme.min.css"> -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
   <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/jquery-3.3.1.min.js"></script>
-  <!-- <script src="./js/bootstrap.min.js"></script> -->
+
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="logo"></div>
-        <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-          </form>
-        <ul class="nav navbar-nav navbar-right menu__nav">
-          <li class="menu__dropdown">
-            <a class="menu__dropbtn" href="#">home</a>
-            <div class="menu__dropdown-content">
-              <a class="menu__link" href="#">Link 1</a>
-              <a class="menu__link" href="#">Link 2</a>
-              <a class="menu__link" href="#">Link 3</a>
-            </div>
-          </li>
-          <li class="menu__dropdown">
-            <a class="menu__dropbtn" href="#">home</a>
-            <div class="menu__dropdown-content">
-              <a class="menu__link" href="#">Link 1</a>
-              <a class="menu__link" href="#">Link 2</a>
-              <a class="menu__link" href="#">Link 3</a>
-            </div>
-          </li>
-        </ul>
-
+  <div class="container">
+    <header class="header">
+      <div class="header__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px"
+          height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="logo">
+          <path d="M50.07,0.212c-27.614,0-50,22.384-50,49.999c0,9.157,2.474,17.731,6.77,25.111L2.044,98.237l22.917-4.796
+            c7.381,4.297,15.954,6.768,25.109,6.768c27.614,0,50-22.385,50-49.999C100.07,22.596,77.684,0.212,50.07,0.212z"
+            class="bubble" />
+          <path d="M30.991,65.689c-0.594,0-1.188-0.227-1.642-0.681L16.192,51.852c-0.436-0.436-0.679-1.024-0.679-1.642
+            c0-0.616,0.245-1.206,0.679-1.642l13.158-13.157c0.906-0.906,2.376-0.906,3.282,0s0.906,2.376,0,3.282L21.116,50.21l11.517,11.518
+            c0.906,0.905,0.906,2.376,0,3.281C32.18,65.463,31.585,65.689,30.991,65.689z" class="icon" />
+          <path d="M69.15,65.689c-0.594,0-1.188-0.227-1.641-0.679c-0.905-0.907-0.905-2.375,0-3.283L79.024,50.21
+            L67.51,38.694c-0.905-0.906-0.905-2.375,0-3.282c0.907-0.907,2.376-0.905,3.283,0l13.155,13.157c0.906,0.906,0.906,2.376,0,3.282
+            L70.793,65.009C70.337,65.463,69.744,65.689,69.15,65.689z" class="icon" />
+          <path d="M40.201,65.689c-0.485,0-0.973-0.15-1.391-0.464c-1.025-0.769-1.233-2.225-0.464-3.249l19.737-26.315
+            c0.768-1.026,2.223-1.234,3.25-0.465c1.025,0.77,1.232,2.225,0.463,3.25L42.06,64.761C41.603,65.369,40.906,65.689,40.201,65.689z"
+            class="icon" />
+        </svg>
       </div>
-    </div>
-
-  </header>
-  <!-- <nav class="navbar navbar-default">
-    <div class="container-fluid">
-  
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Brand</a>
-      </div>
-
- 
-      <div class="collapse navbar-collapse">
-        <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
-          </div>
-        </form>
-        <ul class="nav navbar-nav navbar-right menu__nav">
-          <li class="menu__dropdown">
-            <a class="menu__dropbtn" href="#">home</a>
-            <div class="menu__dropdown-content">
-              <a class="menu__link" href="#">Link 1</a>
-              <a class="menu__link" href="#">Link 2</a>
-              <a class="menu__link" href="#">Link 3</a>
+      <div class="header__links">
+        <ul class="header__nav">
+          <li class="header__dropdown">
+            <a class="header__dropbtn" href="#">home</a>
+            <div class="header__dropdown-content">
+              <a class="header__link" href="#">Link 1</a>
+              <a class="header__link" href="#">Link 2</a>
+              <a class="header__link" href="/solar.html">Solar</a>
             </div>
           </li>
-          <li class="menu__dropdown">
-            <a class="menu__dropbtn" href="#">home</a>
-            <div class="menu__dropdown-content">
-              <a class="menu__link" href="#">Link 1</a>
-              <a class="menu__link" href="#">Link 2</a>
-              <a class="menu__link" href="#">Link 3</a>
+          <li class="header__dropdown">
+            <a class="header__dropbtn" href="#">home</a>
+            <div class="header__dropdown-content">
+              <a class="header__link" href="#">Link 1</a>
+              <a class="header__link" href="#">Link 2</a>
+              <a class="header__link" href="#">Link 3</a>
             </div>
+          </li>
+          <li class="header__search">
+              <div class="search-block">
+                  <button class="btn" type="submit">
+                    <i class="i">&#128270;</i>
+                  </button>
+                  <input type="text" class="txt" placeholder="Search..." />
+                </div>
           </li>
         </ul>
-
-
-
       </div>
-   
-
+    </header>
+    <div class="content">
+      <img src="./img/lol.jpg" alt="lol" class="content__img">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint corrupti perspiciatis non ex, officia asperiores nisi voluptate possimus nihil, quibusdam ipsam facere. Ex veniam esse atque provident nihil fugiat, dignissimos sit similique assumenda, vel asperiores nobis repudiandae, hic aut aliquam! Odit illum corrupti sint ullam! Nulla ratione pariatur voluptate consequuntur, temporibus laudantium blanditiis eaque totam aperiam id quaerat enim! Facilis distinctio odit qui, maiores, exercitationem, omnis recusandae molestiae a deleniti nisi natus! Ut corrupti voluptatibus minus esse obcaecati corporis mollitia eaque vitae similique eveniet distinctio quibusdam asperiores a culpa suscipit fugit aliquam ipsum, quo fugiat ullam? Non itaque, totam expedita omnis amet reiciendis iure ab illum sunt alias, magnam voluptates id harum soluta natus quas corporis labore nulla minus officiis aperiam doloribus molestias dolore? Sapiente quae veniam cum non nostrum! Vero at dignissimos repellendus praesentium incidunt, ad nemo! Nulla quis possimus hic rem nemo nesciunt quisquam placeat magni deserunt sunt eum iure aliquam, adipisci, facilis, ipsa amet cum voluptatem mollitia sit similique perspiciatis perferendis quibusdam. Animi dignissimos minus necessitatibus quam eveniet, ea nemo molestias ipsa placeat ab soluta ipsam obcaecati voluptas dolorem repudiandae. Ducimus debitis provident nobis sunt, magnam quam ipsa rerum temporibus similique placeat consequuntur impedit aliquid dicta nam, animi odio rem ullam, adipisci veritatis ratione accusantium doloribus voluptas. Perferendis ipsum accusamus quo ipsa sunt rerum doloremque at quos voluptatem laborum, necessitatibus ex doloribus, autem laudantium veritatis dicta repellendus vel culpa, consectetur id. Excepturi quae hic fugit reprehenderit! Atque veritatis iste hic amet quisquam tempore aut sed? Ducimus necessitatibus obcaecati sunt porro! Laborum assumenda fuga quae. Fugiat, adipisci unde harum excepturi nulla quo velit, architecto repellendus illo porro necessitatibus maxime veritatis molestias officiis ad dolores corrupti dolorum? Error eius, harum quod voluptatum asperiores quam incidunt illo neque beatae sit aliquid libero quibusdam delectus repellendus molestiae nostrum inventore deserunt voluptate magni minima, esse ratione. Accusantium ea unde fuga quos perspiciatis illo, quis laborum officia, natus quasi, ipsum autem vero quia sequi consectetur rem suscipit minus? Dolorum, iusto magni ea a, magnam quisquam doloribus fugit labore quaerat adipisci nemo cum vel facilis. Voluptate qui suscipit ad maiores recusandae repellendus dolorem itaque ullam facilis a ipsa possimus natus, et modi mollitia illum nesciunt aliquid omnis ducimus aliquam rerum, nihil quis laborum labore? Quos, debitis optio necessitatibus unde repellendus tenetur? Rerum tempora eius molestiae inventore labore itaque vero eligendi laborum hic impedit quod sint voluptatibus placeat, a quisquam quas similique in soluta fugiat!</p>
     </div>
-    </div>
-
-  </nav> -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12 ">
-        <img src="./img/lol.jpg" alt="lol">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius dignissimos aut sequi ad ipsum nostrum culpa! Optio
-          voluptates voluptatibus numquam animi aut, quas quis qui vero earum explicabo assumenda distinctio sit autem nam
-          voluptate necessitatibus doloremque voluptas laboriosam illo fugiat cupiditate eligendi, nisi maiores? Optio, earum?
-          Rem dolor sunt nostrum officia obcaecati, amet optio corporis voluptatibus. Exercitationem neque itaque facilis,
-          fuga omnis voluptas! Non, quae temporibus odit tempore quisquam, laudantium exercitationem ipsum consectetur et
-          a consequatur, excepturi velit amet aliquam? Beatae iure quos suscipit id perspiciatis. Totam cupiditate eveniet
-          iusto corporis sint error, recusandae unde odio similique iste assumenda nemo fugit quam dicta neque illo magni
-          fugiat laborum aliquam necessitatibus praesentium esse mollitia. Libero mollitia iste odit fugit consequatur. Similique
-          dolores, quibusdam asperiores animi eaque eos. Eveniet sapiente veniam non totam, ea fuga rerum rem asperiores
-          unde facere, eius tenetur voluptates quibusdam saepe? Eius amet deserunt error nobis blanditiis impedit eaque accusamus
-          magnam reprehenderit iste ea voluptatum magni placeat molestias culpa ullam, dicta et assumenda asperiores minus
-          corrupti nulla nemo. Eum voluptas eveniet ut eaque qui blanditiis exercitationem accusamus, vero nulla, pariatur
-          iure optio. Quidem nihil voluptatum vel exercitationem aut dicta optio quasi assumenda ipsa. Praesentium omnis
-          libero debitis non.</p>
-      </div>
-    </div>
-    <div class="row footer navbar-fixed-bottom">
-      <div class="col-xs-6">
-        <p class="left-block">lolo</p>
-        <p class="left-block">lololo2</p>
-      </div>
-      <div class="col-xs-6">
-        <p>lolo</p>
-        <p>lololo2</p>
-      </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs-12 ">
-            <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, atque.</p>
-          </div>
+    <div class="info">
+        <div class="info__text info__text_right">
+            <p>Lorem ipsum dolor sit.</p>
+            <p>Lorem, ipsum dolor.</p>
         </div>
-      </div>
-
+        <div class="info__text">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum.</p>
+        </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer__text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptas cum? Non quia sequi repudiandae.</p>
+      </div>
+    </footer>
   </div>
 </body>
 
