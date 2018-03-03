@@ -1,6 +1,9 @@
 html, body {
     height: 100%;
 }
+body {
+    margin: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -60,7 +63,7 @@ ul{
 }
 .header__nav {
     display: flex;
-
+    padding: 0;
 }
 .header__search {
     display: flex;
@@ -178,6 +181,11 @@ ul{
   }
   
   .i {
+    display: inline-block;
+    background: url('../img/if_system-search_118797.png') no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
     min-width: 20px;
     color: #ccc;
   }
@@ -193,6 +201,8 @@ ul{
 .earth {
     z-index: 2;
     position: relative;
+    background: url('../img/11-2-earth-free-download-png.png') no-repeat;
+    background-size: cover;
     background-color: blue;
     width: 2em;
     height: 2em;
@@ -201,6 +211,8 @@ ul{
 
 .moon {
     z-index: 3;
+    background: url('../img/upscale-239306365020212.png') no-repeat;
+    background-size: cover;
     position: absolute;
     top: .75em; left: -.75em;
     background-color: silver;
@@ -289,3 +301,11 @@ ul{
     from { border-radius: 50%;}
     to { border-radius: 45%;}
   }
+
+
+  @media only screen and (max-width: 580px) {
+    .header {
+        flex-direction: column;
+        max-height: 148px;
+    }
+}
